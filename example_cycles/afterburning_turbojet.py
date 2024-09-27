@@ -124,7 +124,7 @@ def viewer(prob, pt, file=sys.stdout):
                     prob[pt+'.perf.Fn'], prob[pt+'.perf.Fg'], prob[pt+'.inlet.F_ram'], prob[pt+'.perf.OPR'],
                     prob[pt+'.perf.TSFC'])
     
-    summary_data = tuple(item[0] for item in summary_data[:8])
+    summary_data = tuple(item[0] for item in summary_data)
 
     
     print(file=file, flush=True)

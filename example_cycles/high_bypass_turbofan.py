@@ -250,6 +250,8 @@ def viewer(prob, pt, file=sys.stdout):
                         prob[pt+'.perf.Fg'], prob[pt+'.inlet.F_ram'], prob[pt+'.perf.OPR'],
                         prob[pt+'.perf.TSFC'], prob[pt+'.splitter.BPR'])
 
+    summary_data = tuple(item[0] for item in summary_data)
+
     print(file=file, flush=True)
     print(file=file, flush=True)
     print(file=file, flush=True)
